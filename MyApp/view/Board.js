@@ -154,13 +154,13 @@ Ext.define('TaskBoard.view.Board',{
                 let color ='';
                 switch (item.data.important){
                     case 0:
-                       color='rgba(244,51,67,40%)';
+                       color='rgba(244,51,67,50%)';
                        break;
                     case 1:
                         color='rgba(255,255,0,50%)';
                         break;
                     case 2:
-                        color='rgba(0,255,0,40%)';
+                        color='rgba(0,255,0,50%)';
                         break;
                 }
                items.down('[name='+key+']').add({
@@ -189,7 +189,7 @@ Ext.define('TaskBoard.view.Board',{
                                 let color = '';
                                 let sel_card = Ext.getCmp('items').down('[selected=true]');
                                 if (sel_card!=null){
-                                    color = EditRgba(sel_card.color,70);
+                                    color = EditRgba(sel_card.color,50);
                                     sel_card.setBodyStyle('background',color);
                                     sel_card.selected=false;
                                 }
