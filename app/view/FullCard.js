@@ -53,8 +53,11 @@ Ext.define('TaskBoard.view.FullCard',{
                     }
                 }
     ],
+    title:{
+        cls:'header-title-cls'
+    },
     bind:{
-        title: 'Задача {number}',
+        title:'Задача {number}',
         header:'{color}'
     }
 });

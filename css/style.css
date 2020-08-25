@@ -1,4 +1,35 @@
 
 .header-title-cls{
-    color : #1c001c !important;
+    color : #1c001c;
+    font-weight: bold;
+
+}
+.panel-cls{
+    border-radius: 20px;
+}
+.header-cls{
+    color : #1c001c;
+    font-weight: bold;
+}
+.body-cls{
+    background: #3b5a82;
+}
+.item-cls{
+    color:white;
+
+}
+.group-proxy{
+    width: 100px;
+    height: 100px;
+    background: #82a7c8;
+}
+.group-proxy-invalid{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.group-proxy-valid{
+    width: 100px;
+    height: 100px;
+    background: green;
 }

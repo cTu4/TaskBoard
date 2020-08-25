@@ -12,7 +12,8 @@ Ext.define('TaskBoard.view.Viewport', {
         'TaskBoard.view.Card',
         'TaskBoard.ViewModel.TestViewModel',
         'TaskBoard.ViewModel.TaskModel',
-        'TaskBoard.ViewModel.BoardViewModel'
+        'TaskBoard.ViewModel.BoardViewModel',
+        'Ext.window.Toast'
 
 
     ],

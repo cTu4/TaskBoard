@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="612ae3cb-d5e9-435e-8020-ac2319476d3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TaskBoard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TaskBoard.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/ViewModel/BoardViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/ViewModel/BoardViewModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ViewModel/TaskModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/ViewModel/TaskModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/Users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Board.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/FullCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/FullCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/Viewport.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Viewport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +39,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -43,7 +55,6 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -62,23 +73,39 @@
       <workItem from="1597696280727" duration="5494000" />
       <workItem from="1597747003939" duration="14030000" />
       <workItem from="1597762302421" duration="3704000" />
-      <workItem from="1597834913350" duration="4910000" />
-      <workItem from="1597840503261" duration="1941000" />
-      <workItem from="1597916737935" duration="11408000" />
-      <workItem from="1598005760359" duration="4528000" />
-      <workItem from="1598091772788" duration="2376000" />
-      <workItem from="1598251547791" duration="24066000" />
+      <workItem from="1598345880137" duration="1804000" />
+      <workItem from="1598360504669" duration="14392000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1597762086382">
+    <state x="242" y="116" width="1482" height="872" key="DiffContextDialog" timestamp="1598343833086">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1597762086382" />
+    <state x="242" y="116" width="1482" height="872" key="DiffContextDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1598343833086" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1598347683179">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1598347683179" />
+    <state x="247" y="116" width="1482" height="872" key="MergeDialog" timestamp="1598343859811">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="247" y="116" width="1482" height="872" key="MergeDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1598343859811" />
     <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1597700753812">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -87,9 +114,13 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="684" y="291" width="618" height="580" key="find.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1597749427383" />
-    <state x="496" y="212" width="672" height="678" key="search.everywhere.popup" timestamp="1598255265264">
-      <screen x="67" y="27" width="1533" height="873" />
+    <state x="729" y="246" width="518" height="612" key="git4idea.branch.GitSmartOperationDialog" timestamp="1598343838904">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="496" y="212" width="672" height="678" key="search.everywhere.popup/67.27.1533.873@67.27.1533.873" timestamp="1598255265264" />
+    <state x="729" y="246" width="518" height="612" key="git4idea.branch.GitSmartOperationDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1598343838904" />
+    <state x="657" y="253" key="run.anything.popup" timestamp="1598366628323">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="657" y="253" key="run.anything.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1598366628323" />
   </component>
 </project>

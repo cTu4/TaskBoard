@@ -1,6 +1,7 @@
 Ext.define('TaskBoard.ViewModel.BoardViewModel',{
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.BoardViewModel',
+
     stores:{
       Users:{
           type:'users'
