@@ -28,14 +28,14 @@
   <component name="ChangeListManager">
     <list default="true" id="612ae3cb-d5e9-435e-8020-ac2319476d3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ViewModel/BoardViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/ViewModel/BoardViewModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ViewModel/TestViewModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/Card.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/FullCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/FullCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/UsersGrid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/Viewport.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Viewport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ViewModel/BoardViewModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ViewModel/TaskModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/Users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/Board.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/FullCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/Viewport.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
