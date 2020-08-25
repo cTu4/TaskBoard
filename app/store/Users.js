@@ -116,5 +116,35 @@ Ext.define('TaskBoard.store.Users', {
             status: 'Testing',
             important: 2,
             date: '22.11.2020'
+        },
+        {
+            id: 11,
+            number: 'TSK-1211',
+            task: 'Create car',
+            name: 'Alex',
+            surname: 'Aleshin',
+            status: 'Testing',
+            important: 0,
+            date: '22.11.2020'
+        },
+        {
+            id: 12,
+            number: 'TSK-1212',
+            task: 'Create car',
+            name: 'Alex',
+            surname: 'Aleshin',
+            status: 'Testing',
+            important: 2,
+            date: '22.11.2020'
+        },
+        {
+            id: 13,
+            number: 'TSK-1213',
+            task: 'Create car',
+            name: 'Alex',
+            surname: 'Aleshin',
+            status: 'Testing',
+            important: 1,
+            date: '22.11.2020'
         }]
 });

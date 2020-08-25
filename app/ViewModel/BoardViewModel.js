@@ -7,7 +7,7 @@ Ext.define('TaskBoard.ViewModel.BoardViewModel',{
           type:'users'
       }
     },
-    formulas:{
+      formulas:{
       board_data(get){
           let store = get('Users').getData().items;
           let data = [];

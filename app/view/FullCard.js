@@ -14,8 +14,10 @@ Ext.define('TaskBoard.view.FullCard',{
     bodyPadding: '10px',
     defaults:{
         style: {
-            textAlign:'center'
+            textAlign:'center',
+            margin:20
         },
+        fieldCls:'item-cls'
     },
     setHeader(color){
       this.header.setStyle('background',color);

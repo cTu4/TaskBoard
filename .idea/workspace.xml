@@ -16,14 +16,25 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/test" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="612ae3cb-d5e9-435e-8020-ac2319476d3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/ViewModel/BoardViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/ViewModel/BoardViewModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ViewModel/TestViewModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/Users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Board.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/Card.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/FullCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/FullCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/UsersGrid.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/Viewport.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/Viewport.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
@@ -44,6 +55,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1gF2zCuVOUwgXMXYxNWHpJ9tzTS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

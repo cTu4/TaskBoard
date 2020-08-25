@@ -9,138 +9,97 @@ Ext.define('TaskBoard.view.Board',{
     viewModel:{
         type: 'BoardViewModel'
     },
-    bbar:{
-      xtype:'button',
-      handler(){
-          //
-          // new Ext.drag.Source({
-          //     element: Ext.getBody().createChild({
-          //         html: 'Drag Me',
-          //         style: {
-          //             zIndex: 10,
-          //             width: '100px',
-          //             height: '100px',
-          //             border: '1px solid red',
-          //             position: 'absolute',
-          //             top: '50px',
-          //             left: '600px'
-          //         }
-          //     }),
-          //     proxy: {
-          //         type: 'placeholder',
-          //         cls: 'group-proxy',
-          //         invalidCls: 'group-proxy-invalid',
-          //         validCls: 'group-proxy-valid',
-          //         html: 'Drag'
-          //     },
-          //     groups:'test',
-          //     listeners: {
-          //
-          //     }
-          // });
-          //
-          // new Ext.drag.Target({
-          //     element: Ext.getBody().createChild({
-          //         html: 'Drop Here',
-          //         style: {
-          //             width: '300px',
-          //             height: '300px',
-          //             border: '1px solid blue',
-          //             position: 'absolute',
-          //             top: '250px',
-          //             left: '600px'
-          //         }
-          //     }),
-          //     groups:'test',
-          //     listeners: {
-          //         drop(){
-          //             console.log('sss')
-          //         }
-          //     }
-          // });
-          let full =['plan','progress','test','done'],
-              without_plan =['progress','test','done'],
-                without_progress=['plan','test','done'],
+    listeners:{
+      afterLayout(){
+          let without_plan =['progress','test','done'],
+              without_progress=['plan','test','done'],
               without_test =['plan','progress','done'],
               without_done =['plan','progress','test'];
-
-
           let items = Ext.ComponentQuery.query('panel[class=source]');
-            items.forEach(function (item){
-                console.log(item.id_card);
-                let group = '';
-                switch (item.info.data.status){
-                    case 'Plan':
-                        group='plan';
-                        break;
-                    case 'In progress':
-                        group='progress';
-                        break;
-                    case 'Test':
-                        group='test';
-                        break;
-                    case 'Done':
-                        group='done';
-                        break;
-                }
-                new Ext.drag.Source({
-                    element:item.el.dom,
-                    proxy: {
-                                type: 'placeholder',
-                                cls: 'group-proxy',
-                                invalidCls: 'group-proxy-invalid',
-                                validCls: 'group-proxy-valid',
-                                html: 'Drag'
-                    },
-                    describe(info){
-                        info.setData('id',item.id_card);
-                    },
-                    constrain: Ext.getCmp('board').body.el.dom,
-                    groups:group,
-                });
-
-            });
-            items =  Ext.ComponentQuery.query('panel[class=target]');
-            console.log(items);
-            items.forEach(function (item){
-                console.log(item.name);
-                let group = '';
-                switch (item.name){
-                    case 'plan':
-                        group=without_plan;
-                        break;
-                    case 'progress':
-                        group=without_progress;
-                        break;
-                    case 'test':
-                        group=without_test;
-                        break;
-                    case 'done':
-                        group=without_done;
-                        break;
-                }
-                new Ext.drag.Target({
-                    element:item.body.el.dom,
-                    groups:group,
-                    listeners: {
-                        drop(target,info){
-                            info.getData('id').then(function (id){
-                                let status = target.getElement().component.name;
-                                let store = Ext.data.StoreManager.lookup('store_users');
-                                var record = store.getById(id);
-                                record.set('status',status);
-                                console.log(store);
-
-                            });
-                        }
-                    }
-                });
+          items.forEach(function (item){
+              let group = '';
+              switch (item.info.data.status){
+                  case 'Plan':
+                      group='plan';
+                      break;
+                  case 'In progress':
+                      group='progress';
+                      break;
+                  case 'Testing':
+                      group='test';
+                      break;
+                  case 'Done':
+                      group='done';
+                      break;
+              }
+              new Ext.drag.Source({
+                  element:item.el.dom,
+                  proxy: {
+                      type: 'placeholder',
+                      cls: 'group-proxy',
+                      invalidCls: 'group-proxy-invalid',
+                      validCls: 'group-proxy-valid',
+                  },
+                  describe(info){
+                      info.setData('id',item.id_card);
+                  },
+                  constrain: Ext.getCmp('items').body.el.dom,
+                  groups:group,
               });
-            console.log(items);
-      }
 
+          });
+          items =  Ext.ComponentQuery.query('panel[class=target]');
+          items.forEach(function (item){
+              let group = '';
+              switch (item.name){
+                  case 'plan':
+                      group=without_plan;
+                      break;
+                  case 'progress':
+                      group=without_progress;
+                      break;
+                  case 'test':
+                      group=without_test;
+                      break;
+                  case 'done':
+                      group=without_done;
+                      break;
+              }
+              new Ext.drag.Target({
+                  element:item.body.el.dom,
+                  groups:group,
+                  listeners: {
+                      drop(target,info){
+                          info.getData('id').then(function (id){
+                              let status = target.getElement().component.name;
+                              let store = Ext.data.StoreManager.lookup('store_users');
+                              let record = store.getById(id);
+                              switch (status){
+                                  case 'plan':
+                                      status='Plan';
+                                      break;
+                                  case 'progress':
+                                      status='In progress';
+                                      break;
+                                  case 'test':
+                                      status='Testing';
+                                      break;
+                                  case 'done':
+                                      status='Done';
+                                      break;
+                              }
+                              record.set('status',status);
+                              Ext.getCmp('board').getViewModel().getRoot().descend(['board_data']).formula.react();
+                          });
+                      }
+                  }
+              });
+          });
+      }
     },
     setItems(data){
+        let board = Ext.getCmp('board');
+        board.remove('items');
         let keys = Object.keys(data);
         let items = Ext.create({
             xtype:'panel',
@@ -195,13 +154,13 @@ Ext.define('TaskBoard.view.Board',{
                 let color ='';
                 switch (item.data.important){
                     case 0:
-                       color='#f43343';
+                       color='rgba(244,51,67,40%)';
                        break;
                     case 1:
-                        color='#f4f400';
+                        color='rgba(255,255,0,50%)';
                         break;
                     case 2:
-                        color='#7dd922';
+                        color='rgba(0,255,0,40%)';
                         break;
                 }
                items.down('[name='+key+']').add({
@@ -213,37 +172,34 @@ Ext.define('TaskBoard.view.Board',{
                    bodyStyle:{
                        background:color,
                    },
+                   // style:{
+                   //     opacity:0.6,
+                   // },
                    class:'source',
                    color:color,
                    selected:false,
                    margin: 10,
                    listeners:{
+                        afterRender(){
 
-                        // afterRender(el){
-                        //     console.log(el);
-                        //     var dd = Ext.create('Ext.dd.DD', el, 'tablesDDGroup', {
-                        //         isTarget: false
-                        //     });
-                        //     var mainTarget = Ext.create('Ext.dd.DDTarget', 'main', 'tablesDDGroup', {
-                        //         ignoreSelf: false
-                        //     });
-                        //     Ext.apply(dd, overrides);
-                        //     Ext.apply(mainTarget, overrides);
-                        // },
+                        },
                         click:{
                             element:'body',
-                            fn(e,el){
+                            fn(){
+                                let color = '';
                                 let sel_card = Ext.getCmp('items').down('[selected=true]');
                                 if (sel_card!=null){
-                                    sel_card.setStyle('opacity',1);
+                                    color = EditRgba(sel_card.color,70);
+                                    sel_card.setBodyStyle('background',color);
                                     sel_card.selected=false;
                                 }
                                 let id_card = this.component.id_card;
                                 let card = Ext.getCmp('items').down('[id_card='+id_card+']');
                                 card.selected=true;
-                                card.setStyle('opacity',0.8);
+                                color = EditRgba(card.color,100);
+                                card.setBodyStyle('background',color);
                                 let data = Ext.data.StoreManager.lookup('store_users').getById(id_card).data;
-                                data['color']=this.component.color;
+                                data['color']=color;
                                 Ext.getCmp('full_card').getViewModel().setData(data);
 
                             }
@@ -292,29 +248,8 @@ Ext.define('TaskBoard.view.Board',{
         items:'{board_data}'
     }
 });
-var overrides = {
-    startDrag: function(e) {
-        console.log('startDrag');
-    },
-    onDrag: function() {
-        console.log('onDrag');
-    },
-    onDragEnter: function(e, id) {
-        console.log('onDragEnter');
-    },
-    onDragOver: function(e, id) {
-        console.log('onDragOver');
-    },
-    onDragOut: function(e, id) {
-        console.log('onDragOut');
-    },
-    onDragDrop: function(e, id) {
-        console.log('onDragDrop');
-    },
-    onInvalidDrop: function() {
-        console.log('onInvalidDrop');
-    },
-    endDrag: function(e, id) {
-        console.log('endDrag');
-    }
-};
+function EditRgba(color,opacity){
+    let arr = color.split(',');
+    arr[3] = opacity+'%)';
+    return arr[0]+','+arr[1]+','+arr[2]+','+arr[3];
+}

@@ -5,31 +5,37 @@ Ext.define('TaskBoard.view.Viewport', {
     extend: 'Ext.container.Viewport',
     alias: 'View.Viewport',
     requires: [
-        'TaskBoard.view.UsersGrid',
         'TaskBoard.view.FullCard',
         'TaskBoard.view.Board',
         'TaskBoard.store.Users',
-        'TaskBoard.view.Card',
-        'TaskBoard.ViewModel.TestViewModel',
         'TaskBoard.ViewModel.TaskModel',
-        'TaskBoard.ViewModel.BoardViewModel',
-        'Ext.window.Toast'
-
-
+        'TaskBoard.ViewModel.BoardViewModel'
     ],
 
     defaultListenerScope: true,
-
-    items: [{
-        xtype: 'board'
+    layout: 'border',
+    bodyBorder: false,
+    defaults: {
+        collapsible: true,
+        split: true
     },
+    items: [
         {
-            xtype: 'full_card',
-           // hidden:true
+            xtype: 'board',
+            region:'center',
+            collapsible:false
+        },
+        {
+            xtype:'panel',
+            title: 'Полная информация о задаче',
+            titleAlign:'center',
+            layout:'anchor',
+            minWidth:450,
+            items:{
+                xtype: 'full_card'
+            },
+            region: 'east'
         }],
 
-    readOnlyButton_click: function (self) {
-        this.down('usersgrid').getViewModel().set('readOnly', self.pressed);
-    }
 
 });

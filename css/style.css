@@ -7,29 +7,34 @@
 .panel-cls{
     border-radius: 20px;
 }
-.header-cls{
-    color : #1c001c;
-    font-weight: bold;
-}
+
 .body-cls{
     background: #3b5a82;
 }
 .item-cls{
-    color:white;
-
+    color:#2d2d2d;
+    font-weight:bolder;
+    font-size: large;
 }
 .group-proxy{
-    width: 100px;
+    width: 260px;
     height: 100px;
-    background: #82a7c8;
+    border: 3px dotted #58a0d9;
+    border-radius: 20px;
+    background: rgba(88,160,217,0.2);
+
 }
 .group-proxy-invalid{
-    width: 100px;
+    width: 260px;
     height: 100px;
-    background: red;
+    border: 3px dotted rgba(255,0,0,1);
+    border-radius: 20px;
+    background: rgba(255,0,0,0.2);
 }
 .group-proxy-valid{
-    width: 100px;
+    width: 260px;
     height: 100px;
-    background: green;
+    border: 3px dotted #00ff00;
+    background: rgba(0,255,0,0.2);
+    border-radius: 20px;
 }
