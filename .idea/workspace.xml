@@ -28,15 +28,9 @@
   <component name="ChangeListManager">
     <list default="true" id="612ae3cb-d5e9-435e-8020-ac2319476d3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ViewModel/BoardViewModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ViewModel/TaskModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/Users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/Board.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/FullCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/Viewport.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp/MyApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extjs/ext-all-debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/extjs/ext-all-debug.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
