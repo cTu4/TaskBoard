@@ -19,14 +19,17 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="612ae3cb-d5e9-435e-8020-ac2319476d3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp/ViewModel/BoardViewModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp/ViewModel/BoardViewModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApp/store/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp/store/Users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyApp/view/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/MyApp/view/Board.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
@@ -84,6 +87,8 @@
       <workItem from="1597762302421" duration="3704000" />
       <workItem from="1598345880137" duration="1804000" />
       <workItem from="1598360504669" duration="14392000" />
+      <workItem from="1598435158370" duration="42000" />
+      <workItem from="1598438409557" duration="12658000" />
     </task>
     <servers />
   </component>
@@ -101,7 +106,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -119,10 +124,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="242" y="116" width="1482" height="872" key="DiffContextDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1598343833086" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1598394567342">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1598435198128">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1598394567342" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1598435198128" />
     <state x="247" y="116" width="1482" height="872" key="MergeDialog" timestamp="1598343859811">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -139,9 +144,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="729" y="246" width="518" height="612" key="git4idea.branch.GitSmartOperationDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1598343838904" />
-    <state x="657" y="253" key="run.anything.popup" timestamp="1598366628323">
+    <state x="657" y="253" key="run.anything.popup" timestamp="1598456723112">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="657" y="253" key="run.anything.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1598366628323" />
+    <state x="657" y="253" key="run.anything.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1598456723112" />
   </component>
 </project>

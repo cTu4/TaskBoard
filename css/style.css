@@ -21,20 +21,19 @@
     height: 100px;
     border: 3px dotted #58a0d9;
     border-radius: 20px;
-    background: rgba(88,160,217,0.1);
-
+    background: rgba(88,160,217,0.2);
 }
 .group-proxy-invalid{
     width: 260px;
     height: 100px;
     border: 3px dotted rgba(255,0,0,1);
     border-radius: 20px;
-    background: rgba(255,0,0,0.1);
+    background: rgba(255,0,0,0.2);
 }
 .group-proxy-valid{
     width: 260px;
     height: 100px;
     border: 3px dotted #00ff00;
-    background: rgba(0,255,0,0.1);
+    background: rgba(0,255,0,0.2);
     border-radius: 20px;
 }

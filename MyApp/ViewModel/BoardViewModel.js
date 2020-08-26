@@ -1,7 +1,6 @@
 Ext.define('TaskBoard.ViewModel.BoardViewModel',{
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.BoardViewModel',
-
     stores:{
       Users:{
           type:'users'
@@ -32,10 +31,6 @@ Ext.define('TaskBoard.ViewModel.BoardViewModel',{
               }
           });
           return data;
-      },
-        card_data(get){
-            let store = get('Users');
-            return store;
-        }
+      }
     }
 });

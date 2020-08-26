@@ -110,7 +110,7 @@ Ext.define('TaskBoard.store.Users', {
         {
             id: 10,
             number: 'TSK-1210',
-            task: 'Create car',
+            task: 'Test sort',
             name: 'Alex',
             surname: 'Aleshin',
             status: 'Testing',
@@ -120,7 +120,7 @@ Ext.define('TaskBoard.store.Users', {
         {
             id: 11,
             number: 'TSK-1211',
-            task: 'Create car',
+            task: 'Test sort',
             name: 'Alex',
             surname: 'Aleshin',
             status: 'Testing',
@@ -130,7 +130,7 @@ Ext.define('TaskBoard.store.Users', {
         {
             id: 12,
             number: 'TSK-1212',
-            task: 'Create car',
+            task: 'Test sort',
             name: 'Alex',
             surname: 'Aleshin',
             status: 'Testing',
@@ -140,7 +140,7 @@ Ext.define('TaskBoard.store.Users', {
         {
             id: 13,
             number: 'TSK-1213',
-            task: 'Create car',
+            task: 'Test sort',
             name: 'Alex',
             surname: 'Aleshin',
             status: 'Testing',
